@@ -17,6 +17,8 @@ namespace MeepRabbitMQ.Sources
     [MeepNamespace(ARMQModule.PluginNamespace)]
     public class Dequeue : ARMQModule
     {
+        public bool AutoAck { get; set; } = false;
+
         public override IObservable<Message> Pipeline
         {
             get
@@ -50,7 +52,7 @@ namespace MeepRabbitMQ.Sources
                                     DeliveryTag = qm.EventArgs.DeliveryTag
                                 };
                     connection.Channel.BasicConsume(queue: queue,
-                                                    autoAck: true,
+                                                    autoAck: AutoAck,
                                                     consumer: consumer);
                 }
 
