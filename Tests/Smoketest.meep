@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Pipeline xmlns="http://meep.example.com/Meep/V1" 
+          xmlns:mp="http://meep.example.com/Meep/V1" 
+          xmlns:xi="http://www.w3.org/2003/XInclude" 
+          xmlns:s="http://meep.example.com/MeepSQL/V1"
+          xmlns:q="http://meep.example.com/MeepRabbitMQ/V1">
+
+    <Plugin File="/Users/cwenham/Projects/MeepRabbitMQ/MeepRabbitMQ/bin/Debug/netstandard2.1/osx-x64/publish/MeepRabbitMQ.dll"/>
+
+    <q:Enqueue>
+        <Timer Interval="00:00:10"/>
+    </q:Enqueue>
+    
+    <q:Dequeue WriteLine="{msg.AsJSON}"/>
+
+</Pipeline>

@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeepRabbitMQ", "MeepRabbitMQ\MeepRabbitMQ.csproj", "{AA153A28-46F0-4D09-800E-DA11596FC289}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{C0016042-92A8-4F54-BB73-28A43C99C520}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA153A28-46F0-4D09-800E-DA11596FC289}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA153A28-46F0-4D09-800E-DA11596FC289}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA153A28-46F0-4D09-800E-DA11596FC289}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA153A28-46F0-4D09-800E-DA11596FC289}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0016042-92A8-4F54-BB73-28A43C99C520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0016042-92A8-4F54-BB73-28A43C99C520}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0016042-92A8-4F54-BB73-28A43C99C520}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0016042-92A8-4F54-BB73-28A43C99C520}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
