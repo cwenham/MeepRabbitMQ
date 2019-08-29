@@ -11,6 +11,8 @@
         <Timer Interval="00:00:10"/>
     </q:Enqueue>
     
-    <q:Dequeue WriteLine="{msg.AsJSON}"/>
+    <Unbatch WriteLine="{msg.AsJSON}">
+        <q:Dequeue/>
+    </Unbatch>
 
 </Pipeline>
